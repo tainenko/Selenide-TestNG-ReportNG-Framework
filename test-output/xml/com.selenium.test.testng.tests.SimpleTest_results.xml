@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Chrome WebAutomationTesting"
+<testsuite name="Firefox WebAutomationTesting"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="29.185">
+           time="25.858">
   <properties />
   
   
-            <testcase name="testFillGoogleForm" time="29.185" classname="com.selenium.test.testng.tests.SimpleTest" />
+            <testcase name="testFillGoogleForm" time="25.858" classname="com.selenium.test.testng.tests.SimpleTest" />
       
 </testsuite>

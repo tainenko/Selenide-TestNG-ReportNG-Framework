@@ -12,11 +12,99 @@
 <body>
 <h1>Chrome WebAutomationTesting</h1>
 <p>
-  Test duration: 149.782s
+  Test duration: 157.433s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.selenium.test.testng.tests.LoginTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  loginTest
+      </td>
+  <td class="duration">
+    47.101s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>Element should have text &apos;帳號或密碼錯誤，請重試一次&apos; {div.validation-summary-errors&gt;ul&gt;li}<br/>
+Element: &apos;&lt;li value=&quot;0&quot; displayed:false&gt;&lt;/li&gt;&apos;<br/>
+Screenshot: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1528878671474.0.png<br/>
+Page source: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1528878671474.0.html<br/>
+Timeout: 4 s.</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)<br />
+              com.codeborne.selenide.commands.Should.should(Should.java:35)<br />
+              com.codeborne.selenide.commands.Should.execute(Should.java:29)<br />
+              com.codeborne.selenide.commands.Should.execute(Should.java:12)<br />
+              com.codeborne.selenide.commands.Commands.execute(Commands.java:144)<br />
+              com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)<br />
+              com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)<br />
+              com.sun.proxy.$Proxy6.shouldHave(Unknown Source)<br />
+              com.selenium.PageObject.LoginPage.loginFail(LoginPage.java:70)<br />
+              com.selenium.test.testng.tests.LoginTest.loginTest(LoginTest.java:18)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.selenium.test.testng.tests.PageObjectTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  testSearch
+      </td>
+  <td class="duration">
+    28.028s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: No results were found on results page</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.AssertJUnit.fail(AssertJUnit.java:59)<br />
+              org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)<br />
+              com.selenium.test.testng.tests.PageObjectTest.testSearch(PageObjectTest.java:24)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)<br />
+              java.lang.Thread.run(Thread.java:748)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,43 +118,7 @@
                   TestHomePage
       </td>
   <td class="duration">
-    41.560s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.selenium.test.testng.tests.LoginTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  loginTest
-      </td>
-  <td class="duration">
-    40.021s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.selenium.test.testng.tests.PageObjectTest</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  testSearch
-      </td>
-  <td class="duration">
-    38.982s
+    54.020s
   </td>
   <td class="result">
         
@@ -84,7 +136,7 @@
                   testFillGoogleForm
       </td>
   <td class="duration">
-    29.185s
+    28.235s
   </td>
   <td class="result">
         

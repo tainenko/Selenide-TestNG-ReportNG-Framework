@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="41.560">
+           time="54.020">
   <properties />
   
   
-            <testcase name="TestHomePage" time="41.560" classname="com.selenium.test.testng.tests.HomePageTest" />
+            <testcase name="TestHomePage" time="54.020" classname="com.selenium.test.testng.tests.HomePageTest" />
       
 </testsuite>
