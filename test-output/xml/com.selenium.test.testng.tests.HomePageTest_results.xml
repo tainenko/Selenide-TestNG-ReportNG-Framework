@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Chrome WebAutomationTesting"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="41.560">
+  <properties />
+  
+  
+            <testcase name="TestHomePage" time="41.560" classname="com.selenium.test.testng.tests.HomePageTest" />
+      
+</testsuite>
