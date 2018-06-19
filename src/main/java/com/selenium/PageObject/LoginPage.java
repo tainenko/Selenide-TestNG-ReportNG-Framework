@@ -14,12 +14,10 @@ public class LoginPage {
     private SelenideElement loginBtn=$("button#login.n-btn.sendGA");
     //驗證碼
     private SelenideElement verifySN=$("input#validCode.n-form--control");
-
     //Title:會員登入
     private SelenideElement loginTitle=$("div.n-title--18.n-m-bottom--xs.n-text--center");
     //手機Email身分字號三擇一
     private SelenideElement loginDescription=$("label.n-form--title");
-
     //請輸入手機Email身分證字號
     private SelenideElement loginIDLabel=$("span#loginID-error");
     //請輸入密碼
