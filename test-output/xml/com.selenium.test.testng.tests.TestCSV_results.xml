@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Chrome WebAutomationTesting"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="0.022">
+  <properties />
+            <testcase name="testAdd" time="0.002" classname="com.selenium.test.testng.tests.TestCSV">
+                <failure type="java.lang.AssertionError"
+                  message="expected [11.9] but found [12.0]"
+              >
+<![CDATA[java.lang.AssertionError: expected [11.9] but found [12.0]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertEqualsImpl(Assert.java:137)
+  org.testng.Assert.assertEquals(Assert.java:118)
+  org.testng.Assert.assertEquals(Assert.java:442)
+  com.selenium.test.testng.tests.TestCSV.testAdd(TestCSV.java:31)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="testAdd" time="0.018" classname="com.selenium.test.testng.tests.TestCSV" />
+                <testcase name="testAdd" time="0.002" classname="com.selenium.test.testng.tests.TestCSV" />
+      
+</testsuite>

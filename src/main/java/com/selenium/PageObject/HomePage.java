@@ -1,11 +1,16 @@
 package com.selenium.PageObject;
 import java.util.ArrayList;
+
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.commands.Exists;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage {
-    public SelenideElement loginbutton=    $("a.sendGA[href='/Login?url=%2F']");
+    private SelenideElement loginbtn=    $("a.sendGA[href='/Login?url=%2F']");
+    private SelenideElement logoutbtn=$("a.sendGA[href='/Logout?url=/']");
 
     //h2Title 全站商品分類
     private SelenideElement h2Title=$("div.n-title--16");
@@ -59,7 +64,7 @@ public class HomePage {
     //16館商品
     private ElementsCollection storeSectionList=$$("#HomeStoreChannel>div>section");
 
-    // 16館商品列表，總共76個商品
+    // 16館商品列表，總共106個商品
     private ElementsCollection storeProductList=$$(".n-category__list.n-left>li");
 
     //銀行活動
@@ -81,12 +86,20 @@ public class HomePage {
     //找不到
     private SelenideElement crazyBannerCloseBtn=$("#cBtnClose");
 
+    private SelenideElement logontext=$("div#logon>ul>li>span");
+
 
     public LoginPage click_loginbutton(){
-        loginbutton.click();
+        loginbtn.click();
         return page(LoginPage.class);
+    }
+    public void click_LogoutButton(){
+        logoutbtn.click();
     }
     public void checkStoreProductlist(int num){
         storeProductList.shouldHaveSize(num);
+    }
+    public void loginSuccess(){
+        logontext.should(Condition.visible);
     }
 }

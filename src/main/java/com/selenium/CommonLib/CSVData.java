@@ -30,7 +30,7 @@ public class CSVData implements Iterator<Object[]> {
     public CSVData(String fileName) throws IOException {
         File directory = new File(".");
         String path = ".src.resources.";
-        String absolutePath = directory.getCanonicalPath() + path.replaceAll("\\.", Matcher.quoteReplacement("\\")) + fileName;
+        String absolutePath = directory.getCanonicalPath() + path.replaceAll("\\.", Matcher.quoteReplacement("/")) + fileName;
         System.out.println(absolutePath);
         File csv = new File(absolutePath);
         in = new BufferedReader(new FileReader(csv));

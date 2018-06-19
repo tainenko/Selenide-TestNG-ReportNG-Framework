@@ -6,11 +6,11 @@
     <groupId>com.selenium.test</groupId>
     <artifactId>AutomationTesting</artifactId>
     <version>1.0</version>
-    <!--maven參數配置，設置依賴的API版本，並且引用不同的testng.xml -->
+    <!--maven參數配置，設置依賴的API版本，並且引用testNG.xml -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
         <testng.version>6.14.3</testng.version>
         <compiler.version>1.8</compiler.version>
         <selenide.version>4.12.1</selenide.version>
@@ -18,14 +18,13 @@
         <selenium-java.version>3.12.0</selenium-java.version>
         <selenium-server.version>3.12.0</selenium-server.version>
         <reportNG.version>1.1.4</reportNG.version>
-        <slf4j-api.version>1.7.25</slf4j-api.version>
-        <slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
-        <log4j.version>1.2.17</log4j.version>
         <velocity.version>1.7</velocity.version>
         <guice.version>4.2.0</guice.version>
-        <xmlFileName>testng.xml</xmlFileName>
+        <tess4j.version>4.0.2</tess4j.version>
+        <jai-imageio-core.version>1.4.0</jai-imageio-core.version>
+        <jython-standalone.version>2.7.1</jython-standalone.version>
+        <xmlFileName>testNG.xml</xmlFileName>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -54,7 +53,7 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>res/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
                     <forkMode>always</forkMode>
@@ -98,22 +97,6 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j-api.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j-log4j12.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>${velocity.version}</version>
@@ -127,14 +110,19 @@
         <dependency>
             <groupId>net.sourceforge.tess4j</groupId>
             <artifactId>tess4j</artifactId>
-            <version>4.0.2</version>
+            <version>${tess4j.version}</version>
         </dependency>
         <!-- 依賴imageio 支援驗証碼圖片格式-->
         <dependency>
             <groupId>com.github.jai-imageio</groupId>
             <artifactId>jai-imageio-core</artifactId>
-            <version>1.4.0</version>
+            <version>${jai-imageio-core.version}</version>
         </dependency>
-
+        <!-- 依賴jython，實現在JAVA中調用Python-->
+        <dependency>
+            <groupId>org.python</groupId>
+            <artifactId>jython-standalone</artifactId>
+            <version>${jython-standalone.version}</version>
+        </dependency>
     </dependencies>
 </project>

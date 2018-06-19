@@ -2,6 +2,17 @@ package com.selenium.PageObject;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import static com.codeborne.selenide.Selenide.screenshot;
+import org.openqa.selenium.Point;
+
+//驗証碼辨識api
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.util.ImageHelper;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import org.apache.commons.io.FileUtils;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
@@ -39,22 +50,23 @@ public class LoginPage {
     private SelenideElement errors=$("div.validation-summary-errors>ul>li");
 
     //Action
-    public void sendkeys_loginID(String str){loginID.sendKeys(str);}
-    public void sendkeys_password(String str){
+    public void sendkeys_LoginID(String str){loginID.sendKeys(str);}
+    public void sendkeys_Password(String str){
         password.sendKeys(str);
     }
-    public void sendkeys_verifySN(String str){
+    public void sendkeys_VerifySN(String str){
         verifySN.sendKeys(str);
     }
-    public void click_loginBtn() {
+    public void click_LoginBtn() {
         loginBtn.click();
     }
 
-    public void loginaction(){
-        sendkeys_loginID("eitctest060");
-        sendkeys_password("abc12345");
-        sendkeys_verifySN("123456");
-        click_loginBtn();
+    public HomePage loginAction(String username,String passwd,String verifyCode){
+        sendkeys_LoginID(username);
+        sendkeys_Password(passwd);
+        sendkeys_VerifySN(verifyCode);
+        click_LoginBtn();
+        return page(HomePage.class);
 
     }
 
@@ -64,9 +76,34 @@ public class LoginPage {
         password.isDisplayed();
         loginBtn.isDisplayed();
     }
+    public String getVerifyCode() throws Exception{
+        String result = null;
+        //對登入頁截圖，並裁切出驗証碼的部份。
+        screenshot("verifyImage");
+        File image = new File("build/reports/tests/verifyImage.png");
+
+        BufferedImage fullImg = ImageIO.read(image);
+        
+        Point point = varifyCodeImg.getLocation();
+        int width = varifyCodeImg.getSize().getWidth();
+        int height = varifyCodeImg.getSize().getHeight();
+        System.out.println(width);
+        BufferedImage textImage = fullImg.getSubimage(point.getX(),point.getY(),width,height);
+
+        // 圖片放大4倍，增強識別率
+        textImage = ImageHelper.getScaledInstance(textImage, textImage.getWidth() * 2, textImage.getHeight() * 2);
+        //textImage = ImageHelper.convertImageToBinary(textImage);
+        ImageIO.write(textImage, "png", new File("tessdata/verifyCode.png"));
+        Tesseract instance = new Tesseract();
+        //辨識率不佳時，可以額外引入訓練庫
+        //英文字庫
+        instance.setLanguage("eng");
+        result = instance.doOCR(textImage);
+        System.out.println(result); ;
+        return result;
+    }
     public void loginFail(){
         errors.shouldHave(Condition.text("帳號或密碼錯誤，請重試一次"));
-
     }
 }
 
