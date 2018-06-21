@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.730">
+           time="22.852">
   <properties />
   
   
-            <testcase name="testFillGoogleForm" time="20.730" classname="com.selenium.test.testng.tests.SimpleTest" />
+            <testcase name="testFillGoogleForm" time="22.852" classname="com.selenium.test.testng.tests.SimpleTest" />
       
 </testsuite>

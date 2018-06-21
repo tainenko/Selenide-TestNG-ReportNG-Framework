@@ -3,6 +3,8 @@ package com.selenium.PageObject;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.screenshot;
+
+import com.selenium.CommonLib.CopyOfCleanLines;
 import org.openqa.selenium.Point;
 
 //驗証碼辨識api
@@ -50,12 +52,12 @@ public class LoginPage {
     private SelenideElement errors=$("div.validation-summary-errors>ul>li");
 
     //Action
-    public void sendkeys_LoginID(String str){loginID.sendKeys(str);}
+    public void sendkeys_LoginID(String str){loginID.setValue(str);}
     public void sendkeys_Password(String str){
-        password.sendKeys(str);
+        password.setValue(str);
     }
     public void sendkeys_VerifySN(String str){
-        verifySN.sendKeys(str);
+        verifySN.setValue(str);
     }
     public void click_LoginBtn() {
         loginBtn.click();
@@ -77,29 +79,33 @@ public class LoginPage {
         loginBtn.isDisplayed();
     }
     public String getVerifyCode() throws Exception{
-        String result = null;
+        String str = null;
+        String result="";
+        String destFile="tessdata/verifyCode.png";
         //對登入頁截圖，並裁切出驗証碼的部份。
         screenshot("verifyImage");
         File image = new File("build/reports/tests/verifyImage.png");
-
         BufferedImage fullImg = ImageIO.read(image);
-        
         Point point = varifyCodeImg.getLocation();
         int width = varifyCodeImg.getSize().getWidth();
         int height = varifyCodeImg.getSize().getHeight();
-        System.out.println(width);
         BufferedImage textImage = fullImg.getSubimage(point.getX(),point.getY(),width,height);
-
-        // 圖片放大4倍，增強識別率
+        // 圖片放大4倍、除噪、去除干擾線
         textImage = ImageHelper.getScaledInstance(textImage, textImage.getWidth() * 2, textImage.getHeight() * 2);
-        //textImage = ImageHelper.convertImageToBinary(textImage);
-        ImageIO.write(textImage, "png", new File("tessdata/verifyCode.png"));
+        CopyOfCleanLines.cleanLinesInImage(textImage,destFile);
         Tesseract instance = new Tesseract();
-        //辨識率不佳時，可以額外引入訓練庫
-        //英文字庫
+        //英文字庫，限制辨識結果為數字
         instance.setLanguage("eng");
-        result = instance.doOCR(textImage);
-        System.out.println(result); ;
+        instance.setTessVariable("tessedit_char_whitelist", "1234567890");
+        str = instance.doOCR(new File(destFile));
+
+        //濾掉辨識結果的空格與其他字元
+        if(str !=null && !"".equals(str)){
+            for (int i=0;i<str.length();i++){
+                if(str.charAt(i)>=48 && str.charAt(i)<=57)
+                    result+=str.charAt(i);
+            }
+        }
         return result;
     }
     public void loginFail(){

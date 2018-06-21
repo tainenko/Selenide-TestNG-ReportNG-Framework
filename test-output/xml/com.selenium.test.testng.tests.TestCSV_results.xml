@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Chrome WebAutomationTesting"
+<testsuite name="Firefox WebAutomationTesting"
            tests="3"
            failures="1"
            errors="0"
            skipped="0"
-           time="0.022">
+           time="0.001">
   <properties />
-            <testcase name="testAdd" time="0.002" classname="com.selenium.test.testng.tests.TestCSV">
+            <testcase name="testAdd" time="0.000" classname="com.selenium.test.testng.tests.TestCSV">
                 <failure type="java.lang.AssertionError"
                   message="expected [11.9] but found [12.0]"
               >
@@ -36,7 +36,7 @@
           </testcase>
   
   
-            <testcase name="testAdd" time="0.018" classname="com.selenium.test.testng.tests.TestCSV" />
-                <testcase name="testAdd" time="0.002" classname="com.selenium.test.testng.tests.TestCSV" />
+            <testcase name="testAdd" time="0.000" classname="com.selenium.test.testng.tests.TestCSV" />
+                <testcase name="testAdd" time="0.001" classname="com.selenium.test.testng.tests.TestCSV" />
       
 </testsuite>
