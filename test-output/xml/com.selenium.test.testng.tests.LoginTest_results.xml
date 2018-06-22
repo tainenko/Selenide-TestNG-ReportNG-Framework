@@ -4,17 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="58.851">
+           time="69.993">
   <properties />
-            <testcase name="loginTest" time="9.383" classname="com.selenium.test.testng.tests.LoginTest">
+            <testcase name="loginTest" time="10.037" classname="com.selenium.test.testng.tests.LoginTest">
                 <failure type="com.codeborne.selenide.ex.ElementNotFound"
                   message="Element not found {div#logon&gt;ul&gt;li&gt;span}
 Expected: visible"
               >
 <![CDATA[Element not found {div#logon>ul>li>span}
 Expected: visible
-Screenshot: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1529551299608.1.png
-Page source: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1529551299608.1.html
+Screenshot: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1529574060806.1.png
+Page source: file:/Users/ehsn/Selenide-TestNG-ReportNG-Framework/build/reports/tests/1529574060806.1.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: Unable to locate element: div#logon>ul>li>span
   com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
@@ -47,8 +47,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
 System info: host: 'ehsnde-MacBook-Pro.local', ip: 'fe80:0:0:0:107a:29a5:a008:4645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: true, moz:processID: 1294, moz:profile: /var/folders/dx/5fg04pzd06z..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.6.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 8db9ba0d-8257-f64a-8131-97874b72be4e
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: true, moz:processID: 2335, moz:profile: /var/folders/dx/5fg04pzd06z..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.6.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 2bbee038-9d2d-fd43-beab-2bb57240db11
 *** Element info: {Using=css selector, value=div#logon>ul>li>span}
   sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,7 +94,7 @@ Session ID: 8db9ba0d-8257-f64a-8131-97874b72be4e
           </testcase>
   
   
-            <testcase name="loginTest" time="10.657" classname="com.selenium.test.testng.tests.LoginTest" />
-                <testcase name="loginTest" time="38.811" classname="com.selenium.test.testng.tests.LoginTest" />
+            <testcase name="loginTest" time="15.193" classname="com.selenium.test.testng.tests.LoginTest" />
+                <testcase name="loginTest" time="44.763" classname="com.selenium.test.testng.tests.LoginTest" />
       
 </testsuite>

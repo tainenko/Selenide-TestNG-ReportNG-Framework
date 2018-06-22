@@ -1,10 +1,8 @@
 package com.selenium.PageObject;
-import java.util.ArrayList;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.commands.Exists;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -88,16 +86,23 @@ public class HomePage {
 
     private SelenideElement logontext=$("div#logon>ul>li>span");
 
+    private SelenideElement registerBtn=$("a.sendGA[href='/Register?url=%2F']");
 
-    public LoginPage click_loginbutton(){
+
+    public WebLoginPage loginIn(){
         loginbtn.click();
-        return page(LoginPage.class);
+        return page(WebLoginPage.class);
     }
-    public void click_LogoutButton(){
+    public void logOut(){
         logoutbtn.click();
     }
     public void checkStoreProductlist(int num){
         storeProductList.shouldHaveSize(num);
+    }
+    public WebRegisterPage click_RegisterBtn(){
+        registerBtn.click();
+        return page(WebRegisterPage.class);
+
     }
     public void loginSuccess(){
         logontext.should(Condition.visible);

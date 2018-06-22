@@ -10,24 +10,23 @@ import java.util.Iterator;
 import java.util.Map;
 //Page Object
 import com.selenium.PageObject.HomePage;
-import com.selenium.PageObject.WebLoginPage;
-
-
-public class LoginTest {
-    @Test(dataProvider = "account")
+import com.selenium.PageObject.WebRegisterPage;
+public class WebRegisterProcessTest {
+    @Test(dataProvider = "register")
     public void loginTest(Map<String,String> data) throws Exception{
         String username=data.get("account");
         String passwd=data.get("passwd");
 
         HomePage homepage = open("", HomePage.class);
-        WebLoginPage loginpage=homepage.loginIn();
-        loginpage.loginAction(username,passwd,loginpage.getVerifyCode());
+        WebRegisterPage registerpage=homepage.click_RegisterBtn();
+        homepage=registerpage.registerProcess(username,passwd);
+
         homepage.loginSuccess();
         homepage.logOut();
     }
-    @DataProvider(name = "account")
+    @DataProvider(name = "register")
     public Iterator<Object[]> Numbers() throws IOException {
-        return (Iterator<Object[]>) new CSVData("LoginAccount.csv");
+        return (Iterator<Object[]>) new CSVData("RegisterAccount.csv");
     }
 
 }

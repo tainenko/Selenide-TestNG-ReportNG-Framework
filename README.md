@@ -40,7 +40,7 @@ Project上傳至Gitlab:柯泰年 / Selenide-TestNG-ReportNG-Framework
 
 2018/06/21
 
-優化驗證碼圖片處理方法
+優化驗證碼圖片之干擾線處理方法
 
 ### 已實裝功能
 

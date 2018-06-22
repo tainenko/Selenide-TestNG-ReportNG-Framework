@@ -17,7 +17,7 @@ import org.apache.commons.io.FileUtils;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class LoginPage {
+public class WebLoginPage {
     //SelenideElement
     //手機Email身分證字號
     private SelenideElement loginID=$("input#loginID.n-form--control");
