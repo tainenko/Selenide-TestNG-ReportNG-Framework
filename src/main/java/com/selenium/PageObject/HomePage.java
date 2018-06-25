@@ -3,7 +3,6 @@ package com.selenium.PageObject;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
-
 import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage {
@@ -40,22 +39,8 @@ public class HomePage {
     //影音頻道tab
     public ElementsCollection channelTab=$$("#filmTab>li");
 
-    //找不到
-    private ElementsCollection rankTabList=$$("#rankTab li");
-
-    //找不到
-    private ElementsCollection rankProductList=$$("#rank1 li a");
-
     //熱銷排行榜
     private SelenideElement ranAll=$("div#HomeChannelPush");
-
-
-    //找不到
-    private SelenideElement channelBanner=$(".n-l-colmb30.n-bannerad__wrap .n-left.n-layout--half");
-
-    //找不到
-    private SelenideElement eventBanner=$(".n-l-colmb30.n-bannerad__wrap .n-right.n-layout--half");
-
     //頻道推薦
     private SelenideElement storeSection=$("#HomeStoreChannel");
 
@@ -78,10 +63,6 @@ public class HomePage {
     //更多精選商品
     private SelenideElement bestProducts=$("div#homeHotPdList");
 
-    //找不到
-    private ElementsCollection crazyBannerList=$$("#crazyADBanner");
-
-    //找不到
     private SelenideElement crazyBannerCloseBtn=$("#cBtnClose");
 
     private SelenideElement logontext=$("div#logon>ul>li>span");

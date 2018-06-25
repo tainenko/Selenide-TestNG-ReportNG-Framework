@@ -1,17 +1,19 @@
 package com.selenium.PageObject;
-
+import java.net.*;
+import java.io.*;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
+import com.google.gson.JsonObject;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class WebRegisterPage {
     private SelenideElement registerColumn=$("div.n-l-bgw-lg");
     //會員同意
-    private ElementsCollection RegisterAgree=$$(".n-l-bgw-lg.n-reg__terms");
+    private ElementsCollection registeragree=$$(".n-l-bgw-lg.n-reg__terms");
     //Email
     private SelenideElement inputemail=$("input#signupUserMail.n-form--control");
     //Password
@@ -52,8 +54,6 @@ public class WebRegisterPage {
     private SelenideElement goTop=$("a#footGoTop");
     //安全機制
     private SelenideElement standardsecurity=$("a[href='/HelpCenter/StandardSecurity']");
-    //隱私聲明
-    private SelenideElement privacystatement=$("a[href='/HelpCenter/PrivacyStatement']");
     //服務專線
     private SelenideElement servicephone=$("a[title='24H 免費服務專線：0800-057-999']");
     //會員登入/註冊流程說明
@@ -64,7 +64,7 @@ public class WebRegisterPage {
     private SelenideElement PCIDSS=$("a.n-footer--pci[href='HelpCenter/PCIDSS']");
 
     public void checkServicePhone(){
-        servicephone.shouldHave("[href='tel:0800-057-999']");
+        //servicephone.shouldHave("[href='tel:0800-057-999']");
     }
     public void checkCountryCode(){
         countrycode.getSelectedOption().shouldBe(Condition.text("台灣 +886"));
@@ -80,5 +80,38 @@ public class WebRegisterPage {
         phonevalidcode.setValue(verifyCode);
         submitBtn.click();
         return page(HomePage.class);
+    }
+    public String getVerifyPhoneCode(String phone){
+        String verifyCode="http://172.21.17.24/verify?Mobile=";
+        String urlString = "";
+        try
+        {
+            URL url = new URL(verifyCode+phone);
+            URLConnection urlConnection = url.openConnection();
+            HttpURLConnection connection = null;
+            if(urlConnection instanceof HttpURLConnection)
+            {
+                connection = (HttpURLConnection) urlConnection;
+            }
+            else
+            {
+                System.out.println("请输入 URL 地址");
+                return "";
+            }
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(connection.getInputStream()));
+
+            String current;
+            while((current = in.readLine()) != null)
+            {
+                urlString += current;
+            }
+            System.out.println(urlString);
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        return urlString;
     }
 }

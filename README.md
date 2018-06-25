@@ -42,6 +42,10 @@ Project上傳至Gitlab:柯泰年 / Selenide-TestNG-ReportNG-Framework
 
 優化驗證碼圖片之干擾線處理方法
 
+2018/06/22
+
+更新 PageObject 註冊頁和註冊流程測試
+
 ### 已實裝功能
 
 -PageObject、Webdriver封裝
