@@ -9,7 +9,7 @@ public class WebProductPage {
     //麵包屑
     private SelenideElement mainBreadcrumb=$(".n-breadcrumb__wrap");
     // 麵包屑 list 0.館 1.大分類 2.中分類 3.小分類
-    private ElementsCollection breadcrumList ＝$$("ul.n-left li.n-breadcrumb__drop > a");
+    private ElementsCollection breadcrumList=$$("ul.n-left li.n-breadcrumb__drop > a");
     //商品圖
     private SelenideElement productImg = $("img.product-image");
     //商品圖slide
@@ -35,7 +35,7 @@ public class WebProductPage {
     //配送方式
     private SelenideElement shipMethodtTextList=$(".n-choose__radio>ul");
     //配送方式
-    private ElementsCollection shipMethodList =$(".n-form--radio label");
+    private ElementsCollection shipMethodList =$$(".n-form--radio label");
     //一般宅配
     private ElementsCollection commonDeliver=$$("input#delivery_1");
     // 快倉超取
@@ -45,7 +45,7 @@ public class WebProductPage {
     //超取
     private ElementsCollection DeliverCon=$$("input#d_17");
     //規格、樣式、數量
-    private SelenideElement colorTypeQty=$("#ProductShortDesc + div > div > ul.n-choose__spec"));
+    private SelenideElement colorTypeQty=$("#ProductShortDesc + div > div > ul.n-choose__spec");
     //數量 Selector
     private ElementsCollection qtySelector=$$("select#quantitySelector");
     //樣式

@@ -18,17 +18,17 @@ Tess4j:圖像辨識API，用於會員登入頁的驗證碼辨識。
 
 確定PageObject的架構包含WebElement、Action、Assert。
 
-以TestNG取定cucumber。
+測試框架由cucumber改為TestNG。
 
-封裝WebDriver。
+對WebDriver進行封裝。
 
 2018/06/11:
 
-引進Selenide(基於Selenium二次開發的API)，簡化selenium的架構，提昇程式的可讀性與可維護性。
+引進Selenide(基於Selenium二次開發的API)，簡化selenium的架構，提昇程式的可讀性與可維護性，Selenide具有log、fail時自動截圖、測試失敗時自動關閉webdriver功能。
 
 引進ReportNG：產生HTML與xml兩種格式的Report。
 
-AutomationTesting的架構定為PageObject和Test files，前者包含WebElement、Action、Assert，後者call Action和Assert實作Test Steps。
+AutomationTesting的架構定為PageObject和Test files，前者包含WebElement、Action，後者純粹call Action去實作Test Steps。
 
 Project上傳至Gitlab:柯泰年 / Selenide-TestNG-ReportNG-Framework
 
@@ -45,6 +45,10 @@ Project上傳至Gitlab:柯泰年 / Selenide-TestNG-ReportNG-Framework
 2018/06/22
 
 更新 PageObject 註冊頁和註冊流程測試
+
+2018/06/27
+
+完善註冊頁和註冊流程測試，加入一個getVeriySN的method可以取得Lab區的手機驗証碼。 
 
 ### 已實裝功能
 
@@ -74,13 +78,9 @@ Project上傳至Gitlab:柯泰年 / Selenide-TestNG-ReportNG-Framework
 
 -完善大網的單一頁面測試與多頁面的流程測試。
 
--小網的自動化測試實作。
-
 ### 終極目標：
 
 -自動化測試框架-”關鍵字”驅動重構。
 
--導入HttpRunnerManager，自動化測試Interface
-
-https://github.com/HttpRunner/HttpRunnerManager
+-導入HttpRunnerManager，自動化測試Interface: https://github.com/HttpRunner/HttpRunnerManager
 

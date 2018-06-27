@@ -6,7 +6,11 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ElementsCollection;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -70,48 +74,32 @@ public class WebRegisterPage {
         countrycode.getSelectedOption().shouldBe(Condition.text("台灣 +886"));
     }
 
-    public HomePage registerProcess(String email, String passwd, String phone){
+    public HomePage registerProcess(String email, String passwd, String phone) throws Exception{
         String verifyCode="";
         inputemail.setValue(email);
         inputpasswd.setValue(passwd);
         confirmpasswd.setValue(passwd);
         inputmobile.setValue(phone);
         phonevalidcodeBtn.click();
+        verifyCode=getVerifyPhoneCode(phone);
         phonevalidcode.setValue(verifyCode);
         submitBtn.click();
         return page(HomePage.class);
     }
-    public String getVerifyPhoneCode(String phone){
-        String verifyCode="http://172.21.17.24/verify?Mobile=";
-        String urlString = "";
-        try
-        {
-            URL url = new URL(verifyCode+phone);
-            URLConnection urlConnection = url.openConnection();
-            HttpURLConnection connection = null;
-            if(urlConnection instanceof HttpURLConnection)
-            {
-                connection = (HttpURLConnection) urlConnection;
-            }
-            else
-            {
-                System.out.println("请输入 URL 地址");
-                return "";
-            }
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(connection.getInputStream()));
+    public String getVerifyPhoneCode(String phone) throws Exception {
+        String verifyURL="http://172.21.17.24/verify?Mobile="+phone;
+        String verifySN = "";
+        // Connect to the URL using java's native library
+        URL url = new URL(verifyURL);
+        URLConnection request = url.openConnection();
+        request.connect();
+        // Convert to a JSON object to print data
+        JsonParser jp = new JsonParser();
+        JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
+        JsonObject rootobj = root.getAsJsonObject();
+        JsonObject jsonobj=rootobj.getAsJsonArray("recordset").get(0).getAsJsonObject();
+        verifySN=jsonobj.get("VerifySN").getAsString();
+        return verifySN;
 
-            String current;
-            while((current = in.readLine()) != null)
-            {
-                urlString += current;
-            }
-            System.out.println(urlString);
-        }catch(IOException e)
-        {
-            e.printStackTrace();
-        }
-
-        return urlString;
     }
 }

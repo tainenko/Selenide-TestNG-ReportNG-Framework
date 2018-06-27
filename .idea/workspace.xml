@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3e670bc-1c4d-4f8c-ae4b-2b4acd70f6b9" name="Default" comment="" />
+    <list default="true" id="f3e670bc-1c4d-4f8c-ae4b-2b4acd70f6b9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <ignored path="selenide-tests-example.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +29,11 @@
       <file leaf-file-name="WebRegisterProcessTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/WebRegisterProcessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,7 +48,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="1290">
-                <caret line="86" selection-start-line="86" selection-end-line="86" />
+                <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,8 +58,8 @@
       <file leaf-file-name="CopyOfCleanLines.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/CommonLib/CopyOfCleanLines.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="509">
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,7 +171,6 @@
         <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/CommonLib/CSVData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/setBrowser.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/SetBrowser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/TestCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/selenium/CommonLib/CSVData.java" />
@@ -178,10 +182,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/resources/RegisterAccount.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebRegisterPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/WebRegisterProcessTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/selenium/PageObject/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebProductPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/selenium/CommonLib/GetPhoneSN.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/WebRegisterProcessTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebRegisterPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/selenium/Examples/Tess4jExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/selenium/Examples/GetPhoneSN.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -283,6 +292,16 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="CommonLib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selenide-tests-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Selenide-TestNG-ReportNG-Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="Examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="selenide-tests-example" type="b2602c69:ProjectViewProjectNode" />
@@ -445,22 +464,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.WebRegisterProcessTest.RegisterProcessTest">
+  <component name="RunManager" selected="Application.GetPhoneSN">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="CopyOfCleanLines" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CopyOfCleanLines" />
-      <module name="AutomationTesting" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Tess4jExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.selenium.tess4j.Tess4jExample" />
+    <configuration name="GetPhoneSN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.selenium.Examples.GetPhoneSN" />
       <module name="AutomationTesting" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.selenium.tess4j.*" />
+          <option name="PATTERN" value="com.selenium.Examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -484,6 +498,93 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="WebRegisterProcessTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium.test.testng.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.selenium.test.testng.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.selenium.test.testng.tests.WebRegisterProcessTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="WebRegisterProcessTest (4)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium.test.testng.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.selenium.test.testng.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.selenium.test.testng.tests.WebRegisterProcessTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="WebRegisterProcessTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selenium.test.testng.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.selenium.test.testng.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.selenium.test.testng.tests.WebRegisterProcessTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="WebRegisterProcessTest.RegisterProcessTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationTesting" />
       <extension name="coverage">
@@ -500,58 +601,6 @@
       <option name="METHOD_NAME" value="RegisterProcessTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="WebRegisterProcessTest.loginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.selenium.test.testng.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.selenium.test.testng.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.selenium.test.testng.tests.WebRegisterProcessTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="/Users/ehsn/Selenide-TestNG-ReportNG-Framework/testNG.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTesting" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -592,19 +641,19 @@
       <Port>5050</Port>
     </configuration>
     <list>
-      <item itemvalue="Application.Tess4jExample" />
-      <item itemvalue="TestNG./Users/ehsn/Selenide-TestNG-ReportNG-Framework/testNG.xml" />
-      <item itemvalue="Application.CopyOfCleanLines" />
-      <item itemvalue="TestNG.WebRegisterProcessTest.loginTest" />
+      <item itemvalue="TestNG.WebRegisterProcessTest (4)" />
       <item itemvalue="TestNG.WebRegisterProcessTest.RegisterProcessTest" />
+      <item itemvalue="TestNG.WebRegisterProcessTest" />
+      <item itemvalue="TestNG.WebRegisterProcessTest (1)" />
+      <item itemvalue="Application.GetPhoneSN" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetPhoneSN" />
+        <item itemvalue="TestNG.WebRegisterProcessTest (1)" />
         <item itemvalue="TestNG.WebRegisterProcessTest.RegisterProcessTest" />
-        <item itemvalue="TestNG./Users/ehsn/Selenide-TestNG-ReportNG-Framework/testNG.xml" />
-        <item itemvalue="TestNG.WebRegisterProcessTest.loginTest" />
-        <item itemvalue="Application.Tess4jExample" />
-        <item itemvalue="Application.CopyOfCleanLines" />
+        <item itemvalue="TestNG.WebRegisterProcessTest" />
+        <item itemvalue="TestNG.WebRegisterProcessTest (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -632,20 +681,12 @@
       <workItem from="1529371518093" duration="1575000" />
       <workItem from="1529373365904" duration="16092000" />
       <workItem from="1529482655934" duration="5438000" />
-      <workItem from="1529544380463" duration="28248000" />
+      <workItem from="1529544380463" duration="31587000" />
+      <workItem from="1529998337079" duration="10210000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.22 at 15h 15m 16s.xml">
-      <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.22 at 15h 15m 35s.xml">
-      <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.22 at 15h 15m 46s.xml">
-      <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.22 at 15h 16m 12s.xml">
       <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
     </history-entry>
@@ -667,9 +708,18 @@
     <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.22 at 15h 20m 23s.xml">
       <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.26 at 17h 13m 55s.xml">
+      <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WebRegisterProcessTest_RegisterProcessTest - 2018.06.26 at 17h 14m 28s.xml">
+      <configuration name="WebRegisterProcessTest.RegisterProcessTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="WebRegisterProcessTest_(1) - 2018.06.26 at 17h 15m 43s.xml">
+      <configuration name="WebRegisterProcessTest (1)" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127175000" />
+    <option name="totallyTimeSpent" value="140649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
@@ -696,6 +746,13 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39980546" />
+
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32879376" />
+      <window_info anchor="bottom" id="Changes" order="12" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="right" id="IDEtalk" order="7" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50104165" side_tool="true" weight="0.28988326" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24010417" />
@@ -745,9 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489161104.1.png" />
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489197139.2.png" />
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489207598.3.png" />
     <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489217329.4.png" />
     <entry file="file://$PROJECT_DIR$/build/reports/tests/1529488638873.2.png" />
     <entry file="file://$PROJECT_DIR$/src/resources/testData.csv">
@@ -833,6 +887,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529574060806.1.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebHelperCenter.java" />
     <entry file="file://$PROJECT_DIR$/src/resources/LoginAccount.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -863,16 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/TestCSV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489365856.0.png" />
     <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489402830.1.png" />
     <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489443296.2.png" />
@@ -886,17 +932,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489365856.0.png" />
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489402830.1.png" />
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489443296.2.png" />
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489452367.3.html" />
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489460563.4.png" />
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/1529489452367.3.png" />
+    <entry file="file://$PROJECT_DIR$/testNG.xml">
     <entry file="file://$PROJECT_DIR$/AutomationTesting.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TemplateOfREADME.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebHelperCenter/MemberRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/SetBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/PageObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -907,23 +975,6 @@
             <caret line="86" selection-start-line="86" selection-end-line="86" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/HomePageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebHelperCenter/MemberRight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -934,10 +985,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/WebRegisterProcessTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/CommonLib/CSVData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebRegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="93" column="53" lean-forward="true" selection-start-line="93" selection-start-column="53" selection-end-line="93" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebProductPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,30 +1048,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/Examples/Tess4jExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="510">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebRegisterPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/Examples/GetPhoneSN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="608">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/PageObject/WebProductPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/pages/YouTubePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/pages/YouTubeSearchResultsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/SimpleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/TestCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/test/testng/tests/WebRegisterProcessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tessdata/verifyCode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplateOfREADME.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1290">
+            <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/verifyImage.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/CommonLib/CopyOfCleanLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
