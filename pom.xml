@@ -118,7 +118,7 @@
             <artifactId>jai-imageio-core</artifactId>
             <version>${jai-imageio-core.version}</version>
         </dependency>
-        <!-- 依賴json-->
+        <!-- 依賴gson json解析、編釋套件-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
