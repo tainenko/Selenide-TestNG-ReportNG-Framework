@@ -3,9 +3,6 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/lept4j/lept4j/1.9.4/lept4j-1.9.4.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/lept4j/lept4j/1.9.4/lept4j-1.9.4-javadoc.jar!/" />
-    </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/lept4j/lept4j/1.9.4/lept4j-1.9.4-sources.jar!/" />
     </SOURCES>
